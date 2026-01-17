@@ -1,0 +1,132 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f4c75, #1b262c, #3282b8);
+  padding: 20px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login-title {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #06d6a0;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.login-btn:hover {
+  background-color: #04b383;
+}
+.preview-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.preview-scroll {
+  max-height: 65vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.preview-card {
+  background: #2d3436;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  color: white;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.preview-court {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.preview-team-box {
+  background: #1e272e;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #3a4750;
+}
+
+.preview-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.preview-select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #556;
+  background: #243443;
+  color: white;
+}
+
+.preview-select:focus {
+  outline: none;
+  border-color: #00ffa1;
+}
+
+.match-count-badge {
+  color: #00ffa1;
+  font-size: 12px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.preview-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

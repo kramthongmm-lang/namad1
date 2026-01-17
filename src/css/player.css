@@ -1,0 +1,511 @@
+/* ------------------------------
+   Global Layout
+-------------------------------*/
+.player-page {
+  padding: 20px;
+  font-family: "Prompt", sans-serif;
+  background: linear-gradient(135deg, #101820, #16222a, #003973);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* ------------------------------
+   Header
+-------------------------------*/
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 10px 5px;
+}
+
+.player-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.sub {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* Button sport style */
+.btn {
+  padding: 10px 16px;
+  background: #00ffa1;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #0ff7d1;
+}
+
+/* ------------------------------
+   Add Player Box
+-------------------------------*/
+.add-player-box {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  max-width: 450px;
+}
+
+.add-player-box h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #00ffa1;
+  text-align: center;
+}
+
+.add-player-box input,
+.add-player-box select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.add-player-box input:focus,
+.add-player-box select:focus {
+  border-color: #00ffa1;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.add-player-box select option,
+.controls select option,
+.modal-inner select option {
+  background: #1a1f25;
+  color: #fff;
+}
+
+.add-player-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ffa1, #00c3ff);
+  color: #000;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.add-player-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 255, 161, 0.4);
+}
+
+/* ------------------------------
+   Search / Sort Controls
+-------------------------------*/
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* ------------------------------
+   Stats box
+-------------------------------*/
+.stats-and-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 14px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+/* Rank chart */
+.chart-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.chart-label {
+  width: 75px;
+  font-size: 14px;
+}
+.chart-bar-wrap {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.15);
+  height: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.chart-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffa1, #00c3ff);
+}
+
+/* Total Payment */
+.total-pay {
+  margin-top: 14px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ------------------------------
+   Player List Card
+-------------------------------*/
+.list-card {
+  flex: 1;
+  min-width: 350px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.player-list-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+/* ------------------------------
+   PLAYER CARD (Aligned & Clean)
+-------------------------------*/
+.player-card {
+  background: #243447;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 8px;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* TOP */
+.player-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+
+
+/* MIDDLE — FIXED ALIGNMENT */
+.player-mid {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* BOTTOM */
+.player-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.status {
+  font-weight: bold;
+}
+
+/* Button group */
+.player-bottom .buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.player-bottom button {
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons .danger {
+  background: #ff4545;
+  color: #fff;
+}
+
+.buttons button:not(.danger) {
+  background: #00ffa1;
+  color: #000;
+}
+
+.player-card.play .status {
+  color: #ffcc00;
+}
+
+.player-card.active .status {
+  color: #00e676;
+}
+
+/* ------------------------------
+   PlayerRow (เล็กใน Match หน้า)
+-------------------------------*/
+/* --- FIX PLAYER ROW ALIGNMENT --- */
+.player-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.6fr; /* คงที่ตรงเป๊ะ */
+  align-items: center;
+
+  padding: 10px 14px;
+  margin-bottom: 8px;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+
+  font-size: 16px;
+  color: #e9fefc;
+}
+
+/* ชื่อ + Match count */
+.player-name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 6px;
+}
+
+/* Ranking */
+.player-rank {
+  text-align: left;
+  opacity: 0.9;
+}
+
+/* Status bubble */
+.player-status {
+  justify-self: end;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* สีสถานะ */
+.status-active {
+  background: #0dbf4b;
+  color: white;
+}
+
+.status-play {
+  background: #ff4444;
+  color: white;
+}
+
+.status-other {
+  background: #aaaaaa;
+  color: black;
+}
+
+/* ------------------------------
+   History Modal
+-------------------------------*/
+.history-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.history-modal {
+  background: #1e272e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  color: white;
+}
+
+.history-card {
+  background: #2d3436;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.player-card.active {
+  border-left: 4px solid #00c853; /* green */
+}
+
+.player-card.play {
+  border-left: 4px solid #2979ff; /* blue */
+}
+
+.player-card.bye {
+  border-left: 4px solid #ff3d00; /* red */
+  opacity: 0.7;
+}
+.player-card .buttons button.bye {
+  background: orange !important;
+  color: #fff !important;
+}
+
+.player-card .buttons button.bye:hover {
+  background: #d98a00 !important;
+}
+
+/* ===== Toggle Button ===== */
+.toggle-court-btn {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #94a3b8;
+  background: #e2e8f0;
+  color: #000;
+  font-weight: 600;
+}
+
+/* ===== Add Court Panel ===== */
+.court-add-panel {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 2px solid #64748b;
+  margin-bottom: 12px;
+}
+
+/* ===== Checkbox Grid ===== */
+.court-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+/* ===== Checkbox Item ===== */
+.court-checkbox-item {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #94a3b8;
+  border-radius: 6px;
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+/* hide checkbox */
+.court-checkbox-item input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* checked */
+.court-checkbox-item:has(input:checked) {
+  background: #bbf7d0;
+  border-color: #22c55e;
+}
+
+/* ===== Add Button ===== */
+.court-add-panel button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #2563eb;
+  background: #dbeafe;
+  color: #000;
+  font-weight: 600;
+}
+
+/* ===== Court List ===== */
+.court-list {
+  margin-top: 10px;
+}
+
+/* ===== Court Card ===== */
+.court-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 2px solid transparent;
+  color: #000;
+}
+
+/* ===== Active ===== */
+.court-card.active {
+  background: #dcfce7;        /* เขียวอ่อน */
+  border-color: #22c55e;      /* เขียว */
+}
+
+/* ===== Check ===== */
+.court-card.check {
+  background: #f1f5f9;        /* เทาอ่อน */
+  border-color: #cbd5e1;      /* เทา */
+}
+
+/* buttons */
+.court-card button {
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid #94a3b8;
+  background: #e5e7eb;
+  color: #000;
+}
+
+.court-card .danger {
+  background: #fecaca;
+  border-color: #ef4444;
+}
+
+@media (max-width: 900px) {
+  .court-checkbox-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .court-checkbox-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,77 @@
+.ps-item {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.7fr 0.7fr;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background: #1e1e1e;
+  color: #eee;
+}
+
+/* 🟢 PLAY */
+.ps-item.playing {
+  background: #003d1f;
+  border: 1px solid #00c853;
+  color: #c8ffd8;
+}
+
+/* 🔴 เกิน 20 นาที */
+.ps-item.over-time {
+  background: #4a0000;
+  border: 1px solid #ff4d4d;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.ps-games {
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.9;
+}
+.new-badge {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #f8d76c;
+}
+@keyframes blink-yellow {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.match-row-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.team-inline {
+  white-space: nowrap;
+}
+
+.vs-inline {
+  font-weight: bold;
+  color: #555;
+}
+.match-card-pro.match-new {
+  background: #fff9e6;
+  border: 2px solid #f1c40f;
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.6);
+  animation: newGlow 1.5s infinite alternate;
+}
+
+@keyframes newGlow {
+  from { box-shadow: 0 0 6px rgba(241,196,15,.4); }
+  to   { box-shadow: 0 0 14px rgba(241,196,15,.9); }
+}

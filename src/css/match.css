@@ -1,0 +1,1398 @@
+/* ============================================
+   GLOBAL STYLE
+=============================================== */
+.match-container {
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Prompt', sans-serif;
+  color: rgb(14, 13, 13);
+}
+
+/* ============================================
+   HEADER
+=============================================== */
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(247, 246, 246, 0.08);
+  padding: 14px 20px;
+  border-radius: 12px;
+  border-left: 6px solid #00ff9d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.btn-back {
+  padding: 10px 14px;
+  background: #ff5c5c;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-back:hover {
+  background: #ff4242;
+}
+
+/* ============================================
+   PAGE GRID
+=============================================== */
+.match-grid {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 350px;
+}
+
+/* ============================================
+   PLAYER LIST (LEFT)
+=============================================== */
+.player-list {
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.player-list h3 {
+  margin-bottom: 12px;
+  color: #00eaff;
+  font-weight: 600;
+}
+
+
+
+.player-name {
+  font-weight: bold;
+  color: #00ff9d;
+}
+
+.player-rank {
+  opacity: 0.8;
+}
+
+/* ============================================
+   MATCH PANEL (MANUAL)
+=============================================== */
+.match-panel {
+  background: rgba(255,255,255,0.07);
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  margin-bottom: 25px;
+}
+
+.match-panel h3 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.team-box h4 {
+  margin-bottom: 8px;
+  color: #00eaff;
+}
+
+.match-panel select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border-radius: 10px;
+  border: none;
+  background: #28333f;
+  color: #fff;
+  font-size: 15px;
+}
+
+.btn-save-match {
+  background: #00ff9d;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-save-match:hover {
+  background: #02e288;
+}
+
+/* ============================================
+   MATCH LIST - NEW STYLE
+=============================================== */
+.match-list-panel {
+  margin-top: 20px;
+}
+
+.match-title {
+  font-size: 20px;
+  color: #00eaff;
+  margin-bottom: 12px;
+}
+
+.match-card-pro {
+  background: rgba(255,255,255,0.08);
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  border-left: 6px solid #00ff9d;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.match-head {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.match-number {
+  color: #00ff9d;
+}
+
+.court {
+  background: #0277bd;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.match-team {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.player {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #bbb;
+  font-weight: bold;
+}
+
+.match-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn-end {
+  background: #2ecc71;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ============================================
+   RANDOM PANEL
+=============================================== */
+
+
+.random-panel h4 {
+  color: #00ff9d;
+  margin-bottom: 10px;
+}
+
+.random-panel label {
+  margin-top: 10px;
+}
+
+.random-panel select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #2a323a;
+  color: white;
+  margin-top: 6px;
+}
+
+.random-panel button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #00bcd4;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.random-panel button:hover {
+  background: #009fb7;
+}
+
+/* ============================================
+   Random Result
+=============================================== */
+.random-result {
+  background: rgba(255,255,255,0.06);
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 14px;
+}
+
+.random-result h4 {
+  color: #00ff9d;
+}
+
+.random-result div {
+  padding: 4px 0;
+}
+
+/* ============================================
+   MOBILE
+=============================================== */
+@media (max-width: 768px) {
+  .match-header {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .match-card-pro {
+    padding: 12px;
+  }
+}
+/* Match กำลังเล่น */
+.match-card-pro.match-play {
+  background: rgba(0, 255, 157, 0.12);
+  border-left: 6px solid #00ff9d;
+  color: white;
+}
+
+/* Match ที่จบแล้ว */
+.match-card-pro.match-end {
+  background: rgba(180, 180, 180, 0.15);
+  border-left: 6px solid #777;
+  color: #bbb;
+  filter: grayscale(60%);
+  opacity: 0.7;
+}
+
+/* ปุ่มใน Match End (ไม่ให้กด) */
+.match-card-pro.match-end button {
+  pointer-events: none;
+  opacity: 0.4;
+}
+/* กล่อง Preview ทั้งหมด */
+.preview-panel-compact {
+  padding: 15px;
+  background: #ffffff;            /* สีพื้น */
+  border-radius: 12px;            /* มุมโค้ง */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12); /* เงานุ่มๆ */
+  border: 1px solid #e6e6e6;      /* ขอบบางๆ */
+  margin: 10px 0;                 /* เว้นขอบด้านบน-ล่าง */
+}
+
+/* ทำให้หัวข้อเด่น */
+.preview-panel-compact {
+  padding: 18px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #4ea1ff, #9b7bff);
+  color: white; 
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  margin: 12px 0;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Title */
+.preview-panel-compact h3 {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+.preview-select {
+  appearance: none !important;
+  -webkit-appearance:none !important;
+  -moz-appearance:none !important;
+  padding: 8px;
+  background:#243443 !important;
+  border:1px solid #556 !important;
+  border-radius:6px;
+  color:white !important;
+  flex:1;
+  font-size:14px;
+  cursor:pointer;
+  
+}
+.team-preview {
+  background: rgba(0,0,0,0.15);
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.team-preview b {
+  color: #00eaff;
+}
+
+.vs {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.preview-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-confirm {
+  flex: 1;
+  padding: 10px;
+  background: #00ff9d;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 10px;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.court-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #22303a;
+  border: none;
+  color: white;
+  margin-bottom: 14px;
+}
+/* MODAL OVERLAY */
+.history-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+/* BOX */
+.history-box {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 950px;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: #fff;
+}
+
+/* TABLE LIST */
+.history-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-row-horizontal {
+  display: flex;
+  align-items: center;
+  background: #2b2b2b;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Columns */
+.hist-col { padding: 0 12px; }
+
+.hist-no {
+  min-width: 60px;
+}
+
+.hist-vs {
+  color: #ffd700;
+  font-weight: bold;
+  min-width: 36px;
+  text-align: center;
+}
+
+.hist-court {
+  margin-left: auto;
+  min-width: 80px;
+  text-align: right;
+}
+
+.hist-status {
+  min-width: 70px;
+  text-align: right;
+  color: #00e676;
+}
+
+/* Team colors */
+.team-blue { color: #4da6ff; font-weight: bold; }
+.team-red { color: #ff7676; font-weight: bold; }
+
+/* Close Button */
+.btn-close {
+  margin-top: 20px;
+  background: #e74c3c;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.match-summary {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  background: rgba(255,255,255,0.08);
+  padding: 14px;
+  border-radius: 12px;
+  min-width: 180px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.summary-card h4 {
+  margin-bottom: 8px;
+  color: #00eaff;
+}
+.preview-side-panel {
+  width: 330px;
+  background: #ffffff;
+  padding: 15px;
+  border-left: 3px solid #2196f3;
+  overflow-y: auto;
+}
+
+.preview-multi-item.upgraded {
+  background: #f7f9fc;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #dce3ed;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.match-header {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-block {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edit-name {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #cdd5e0;
+  border-radius: 6px;
+}
+
+.rank-tag {
+  font-size: 12px;
+  color: #455a64;
+}
+
+.match-count {
+  font-size: 12px;
+  color: #7b8794;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.per-match-buttons {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-confirm-one {
+  background: #4caf50;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+
+
+.btn-confirm, .btn-cancel {
+  width: 48%;
+}
+.edit-select {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #0c0c0c;
+  font-size: 14px;
+  transition: 0.15s;
+}
+
+.edit-select:hover {
+  border-color: #888;
+}
+
+.edit-select:focus {
+  outline: none;
+  border-color: #2b6cb0;
+  box-shadow: 0 0 3px rgba(43,108,176,0.4);
+}
+.next-match-box {
+  background: #222;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.next-match-item {
+  background: #333;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next-match-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.next-match-item .team {
+  font-weight: bold;
+}
+
+.next-match-item .vs {
+  color: #bbb;
+}
+
+.next-match-item .court-info {
+  background: #555;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: #f1f1f1;
+  font-size: 13px;
+}
+
+.btn-start-next {
+  background: #28a745;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-start-next:hover {
+  background: #f5f4f4;
+}
+.next-match-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: white;
+  border-left: 6px solid #00c3ff;
+}
+
+.next-match-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.team select {
+ background-color: white !important;
+  color: black;
+  border: 1px solid #555;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.court-info select {
+  background: #444;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+.queue-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-delete1 {
+  background: #28a745;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-delete {
+  background: #dc3545;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+.preview-panel-compact {
+  padding: 10px;
+}
+
+/* --- ROW หลัก --- */
+.match-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;   /* กันล้น */
+}
+
+/* กล่องทีมไม่ต้องสูง */
+.team-box, .court-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 120px;
+}
+
+.team-box select,
+.court-box select {
+  padding: 4px 6px;
+  height: 32px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.85);
+  color: #333;
+}
+
+
+/* VS */
+.vs-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* --- BUTTONS --- */
+.action-buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ปุ่ม style แบบใหม่ */
+.action-buttons .btn {
+  padding: 7px 16px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* สีกลมกลืนกับ gradient ─ ทำเป็นโทนสด */
+.btn.green {
+  background: linear-gradient(135deg, #27d47c, #20b667);
+}
+
+.btn.blue {
+  background: darkblue;
+}
+
+.btn.red {
+  background: linear-gradient(135deg, #ff6565, #e94444);
+}
+
+.btn:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.toggle-btn {
+  background: #1976d2;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-btn:hover {
+  background: #0d5fb8;
+  transform: translateY(-2px);
+}
+
+.toggle-btn:active {
+  background: #0a4a92;
+  transform: translateY(0px);
+}
+
+/* ไอคอนหมุนตอนเปิด */
+.toggle-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn.open .arrow {
+  transform: rotate(180deg);
+}
+.match-panel {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.match-panel.show {
+  max-height: 2000px;   /* ใส่ใหญ่ๆ ไม่ต้องเดาความสูง */
+  padding: 20px;
+}
+
+.player-status-wrapper {
+background: rgba(255,255,255,0.08);
+  padding: 14px;
+  border-radius: 12px;
+  min-width: 180px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* Columns layout: each column = 10 players */
+.columns-container {
+   display: flex;
+  gap: 16px;
+  width: 100%;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 260px;     /* ป้องกันบีบจนล้นบน Tablet */
+}
+
+/* Player row */
+.ps-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;        /* ป้องกันตัดคำแปลก ๆ */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Text size */
+.ps-name {
+  font-weight: bold;
+  width: 50px;
+}
+
+.ps-time {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ps-state {
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+/* Colors */
+.ps-item.green {
+  background: #27ae60;
+}
+
+.ps-item.yellow {
+  background: #f1c40f;
+  color: #333;
+}
+
+.ps-item.red {
+  background: #e74c3c;
+}
+
+.ps-item.gray {
+  background: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .columns-container {
+    flex-wrap: wrap;
+  }
+}
+/* =============== COLUMN LAYOUT =============== */
+
+.columns-container {
+  display: flex;
+  gap: 8px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (max-width: 1024px) {
+  .column {
+    min-width: 45%;     /* Tablet  2 คอลัมน์ */
+  }
+
+  .rank-item,
+  .ps-item {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
+
+/* ==============================
+      ?? Responsive : Mobile 
+   ============================== */
+@media (max-width: 600px) {
+  .column {
+    min-width: 100%;    /* Mobile  1 คอลัมน์ */
+  }
+
+ .rank-name,
+.ps-name {
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+}
+
+/* =============== RANK ITEM (ขนาดเล็ก & สวย) =============== */
+
+.rank-item {
+  padding: 5px 7px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 150px;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  white-space: nowrap;
+}
+
+.rank-name,
+.ps-name {
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rank-score {
+  font-weight: bold;
+}
+
+/* =============== COLORS =============== */
+
+.rank-red {
+  background: #e74c3c;   /* เกมน้อยสุด */
+}
+
+.rank-orange {
+  background: #e67e22;   /* น้อยรองลงมา */
+}
+
+.rank-gold {
+  background: #f1c40f;   /* ลำดับ 3 */
+  color: #333;
+}
+
+.rank-green {
+  background: #27ae60;   /* มากที่สุด */
+}
+
+.rank-gray {
+  background: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .columns-container {
+    flex-wrap: wrap;
+  }
+}
+.ps-header {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 8px 0 10px 0;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+
+    color: #00eaff;      /* สีตัวหนังสือ */
+
+
+  display: inline-block;    /* ให้พอดีข้อความ */
+}
+
+
+.history-box {
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+.history-title {
+  font-size: 11px;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.history-item {
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+/* ทีมเดียวกัน → เขียว */
+.history-green {
+  background: #e8f7e8;
+  color: #0e6b0e;
+}
+
+/* ทีมตรงข้าม → แดง */
+.history-red {
+  background: #fde7e7;
+  color: #a12222;
+}
+.gender-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.gender-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gender-title {
+  font-weight: bold;
+}
+/* ===========================
+   FIX REACT-SELECT
+=========================== */
+
+.react-select-container {
+  width: 100%;
+}
+
+.react-select__control {
+  background: white !important;
+  border: 1px solid #ccc !important;
+  color: black !important;
+}
+
+.react-select__input-container input {
+  color: black !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+}
+
+.react-select__menu {
+  z-index: 9999 !important;
+}
+
+.react-select__option {
+  background: white !important;
+  color: black !important;
+}
+
+.react-select__single-value {
+  color: black !important;
+}
+.react-select-container select {
+  all: unset !important;
+}/* ===========================
+   FORCE REACT-SELECT TO WORK
+=========================== */
+
+/* ============================================
+   RANDOM PANEL
+=============================================== */
+.random-panel {
+  background: rgba(255,255,255,0.06);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  gap: 10px;        /* เพิ่มช่องว่างแต่ละบรรทัด */
+}
+/* ============= PANEL STYLE ============= */
+.left-panel,
+.fixed-pairs {
+  background: #11222c;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left-panel h4,
+.fixed-pairs h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* ============= FORM ELEMENTS ============= */
+.left-panel label,
+.fixed-pairs label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+.left-panel select,
+.fixed-pairs select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+/* ปุ่ม */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #1f7ae0;
+  color: white;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* ปุ่ม random */
+.btn-random {
+  background: #09b36b !important;
+}
+
+/* รายการคู่ล๊อค */
+.fixed-pairs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fixed-pairs li {
+  background: #17303e;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.random-panel h4 {
+  color: #00ff9d;
+  margin-bottom: 10px;
+}
+
+.random-panel label {
+  margin-top: 10px;
+}
+
+.random-panel select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #2a323a;
+  color: white;
+  margin-top: 6px;
+}
+
+.random-panel button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #00bcd4;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.random-panel button:hover {
+  background: #009fb7;
+}
+.responsive-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}@media (max-width: 900px) {
+  .responsive-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   REACT SELECT (SAFE + MINIMAL STYLE)
+=============================================== */
+
+/* ให้ react-select container มีพื้นที่คลิก */
+.rs-wrapper {
+  width: 100%;
+  pointer-events: auto !important;
+}
+
+/* กล่อง control */
+.rs__control {
+  background: white !important;
+  border: 1px solid #ccc !important;
+  color: black !important;
+}
+
+/* ตัวเลือกใน dropdown */
+.rs__option {
+  background: white !important;
+  color: black !important;
+}
+
+/* text ที่เลือกแล้ว */
+.rs__single-value {
+  color: black !important;
+}
+
+/* input ที่พิมพ์ */
+.rs__input-container input {
+  color: black !important;
+  pointer-events: auto !important;
+  user-select: text !important;
+}
+
+/* dropdown menu */
+.rs__menu {
+  z-index: 9999 !important;
+}
+
+/* ป้องกัน CSS global ทับ select */
+.rs-wrapper select {
+  all: unset !important;
+}
+/* กล่องใหญ่ มี scrollbar */
+/* Default: Desktop → 3 คอลัมน์ */
+/* Default = Desktop + Tablet Landscape → 3 คอลัมน์ */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* -----------------------------
+   มือถือจริงเท่านั้น = 1 คอลัมน์
+   ใช้ pointer/hover ตรวจอุปกรณ์
+------------------------------*/
+@media (hover: none) and (pointer: coarse) {
+  .player-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------
+   Tablet แนวตั้ง = 2 คอลัมน์
+   ยกเว้นมือถือทั้งหมด
+------------------------------*/
+@media (min-width: 600px) and (max-width: 1180px) and (orientation: portrait) {
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -----------------------------
+   Tablet แนวนอน = 3 คอลัมน์
+------------------------------*/
+@media (min-width: 600px) and (max-width: 1180px) and (orientation: landscape) {
+  .player-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* กล่องเล็กลง */
+.ps-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: clamp(6px, 1.2vw, 12px);  /* ย่อ-ขยายตามหน้าจอ */
+  font-size: clamp(12px, 1.6vw, 16px);
+  height: clamp(30px, 4vw, 40px);
+
+  background: #222;
+  border-radius: 8px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.ps-name {
+  white-space: nowrap;
+}
+
+/* สีโทนเข้มใหม่ */
+.ps-item.green { background: #0f7b25; }     /* PLAY – เขียวเข้ม */
+.ps-item.yellow { background: #b8860b; }    /* WAIT – ทองเข้ม */
+.ps-item.red { background: #8b0000; }       /* เกิน 20 นาที – แดงเลือดหมูเข้ม */
+.ps-item.gray { background: #2f2f2f; }      /* ACTIVE – เทาเข้ม */
+.ps-item.blue { background: #003f7f; }      /* OPTION เผื่อต้องการ Active สีฟ้าเข้มแทน */
+
+.ps-name { font-weight: bold; }
+.ps-time { width: 60px; text-align: right; }
+.ps-state { width: 90px; text-align: right; }
+/* กล่องเลื่อนทั้งหมด */
+.rank-scroll-container {
+  max-height: 500px;    /* ปรับความสูงตามต้องการ */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* 2 คอลัมน์แบบสวยงาม */
+.rank-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+  gap: 8px;
+}
+
+/* กล่องผู้เล่น */
+.rank-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* สี Rank เข้ม อ่านง่าย */
+.rank-red    { background: #7f0000; }
+.rank-orange { background: #b35a00; }
+.rank-gold   { background: #7a6a00; }
+.rank-green  { background: #0f5f26; }
+.rank-gray   { background: #3a3a3a; }
+
+.rank-name { font-weight: bold; }
+.rank-score { min-width: 60px; text-align: right; }
