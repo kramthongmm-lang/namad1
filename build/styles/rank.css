@@ -1,0 +1,42 @@
+/* ===================== rank.css =====================
+   Rank list / mini-cards
+   Dependencies: globals.css
+=========================================================== */
+
+.rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rank-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.rank-item .name { color: var(--text-main); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rank-item .value { font-weight: 900; color: var(--text-light); }
+
+.rank-item.top {
+  background: linear-gradient(90deg, rgba(59,201,219,0.10), rgba(59,201,219,0.03));
+  border-left: 4px solid var(--primary);
+}
+
+.rank-item.low {
+  opacity: 0.86;
+  filter: grayscale(10%);
+}
+
+/* color classes */
+.rank-red { background: linear-gradient(90deg, rgba(231,76,60,0.08), rgba(231,76,60,0.02)); border-left: 4px solid #e74c3c; }
+.rank-green { background: linear-gradient(90deg, rgba(46,204,113,0.08), rgba(46,204,113,0.02)); border-left: 4px solid #2ecc71; }
+
+@media (max-width: 680px) {
+  .rank-item { padding: 8px; font-size: 14px; }
+}

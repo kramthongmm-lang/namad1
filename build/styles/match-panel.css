@@ -1,0 +1,104 @@
+/* ===================== match-panel.css =====================
+   Panel สำหรับสร้างแมตช์แบบ Manual / Edit
+   Dependencies: globals.css, layout.css, forms.css, buttons.css
+=========================================================== */
+
+.match-panel-outer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.match-panel-card {
+  composes: card;
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(21,34,53,0.9), rgba(17,28,42,0.9));
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.match-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.match-panel-title {
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.match-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-box {
+  flex: 1 1 220px;
+  min-width: 180px;
+}
+
+.team-box label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+.team-box .select,
+.court-box .select {
+  width: 100%;
+}
+
+/* VS badge */
+.vs-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* control row */
+.match-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-save-match {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #000;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text-main);
+}
+
+/* small helper text */
+.match-note {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* responsive */
+@media (max-width: 780px) {
+  .match-row { flex-direction: column; align-items: stretch; }
+  .vs-badge { margin: 6px 0; width: 100%; justify-content: center; }
+}

@@ -1,0 +1,38 @@
+/* ===========================================================
+   BUTTON SYSTEM
+=========================================================== */
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #000;
+}
+.btn-primary:hover { background: var(--primary-dark); }
+
+.btn-green {
+  background: var(--green);
+  color: #fff;
+}
+.btn-red {
+  background: var(--red);
+  color: #fff;
+}
+.btn-yellow {
+  background: var(--yellow);
+  color: #000;
+}
+
+/* small button */
+.btn-sm {
+  padding: 6px 10px;
+  font-size: 13px;
+}

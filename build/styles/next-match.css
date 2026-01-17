@@ -1,0 +1,57 @@
+/* ===================== next-match.css =====================
+   กล่อง Next Match / Queue
+   Dependencies: globals.css, buttons.css
+=========================================================== */
+
+.next-match-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.next-match-card {
+
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(22,32,46,0.95), rgba(14,22,34,0.95));
+}
+
+.next-match-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+}
+
+.next-match-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.court-badge {
+  background: rgba(59,201,219,0.08);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.btn-start-next {
+  background: linear-gradient(135deg, #28a745, #209b44);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* small responsive */
+@media (max-width: 700px) {
+  .next-match-item { flex-direction: column; align-items: stretch; }
+}

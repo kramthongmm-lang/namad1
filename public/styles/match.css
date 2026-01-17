@@ -1,0 +1,32 @@
+/* match.css — core panels, preview rows, queue rows */
+.card-title { font-size:15px; margin-bottom:8px; color:var(--text); }
+.card-body.small-pad { padding:8px 0; }
+
+/* player small list */
+.ps-list { display:flex; flex-direction:column; gap:6px; }
+.ps-row { display:flex; justify-content:space-between; align-items:center; padding:6px 8px; border-radius:8px; background:var(--glass); }
+.ps-name { font-weight:700; }
+.ps-meta { color:var(--muted); font-size:13px; }
+
+/* queue rows */
+.queue-row { display:flex; justify-content:space-between; align-items:center; padding:8px; border-radius:8px; background:rgba(255,255,255,0.01); margin-bottom:8px; }
+.q-teams { font-weight:700; }
+.q-court { color:var(--muted); }
+
+/* preview & team blocks */
+.preview-row { display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap; }
+.team-block { display:flex; flex-direction:column; gap:8px; min-width:160px; }
+.team-block select { background:transparent; color:var(--text); border:1px solid rgba(255,255,255,0.04); padding:8px; border-radius:8px; }
+
+/* vs block */
+.vs-block { min-width:48px; display:flex; align-items:center; justify-content:center; font-weight:800; color:var(--muted); }
+
+/* preview controls */
+.preview-controls .btn { margin-right:8px; padding:10px 12px; border-radius:8px; font-weight:700; }
+
+/* queue list full rows */
+.queue-row.full { display:flex; justify-content:space-between; align-items:center; padding:10px; border-radius:8px; margin-bottom:8px; background:rgba(255,255,255,0.01); }
+.queue-actions { display:flex; gap:8px; align-items:center; }
+
+/* small select inline */
+.inline-select .react-select__control { min-width:160px; }

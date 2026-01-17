@@ -1,0 +1,137 @@
+.monitor-wrapper {
+  padding: 20px;
+  background: #1b1b1b;
+  min-height: 100vh;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.monitor-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #4db8ff;
+  text-shadow: 0 0 10px #005f99;
+}
+
+.monitor-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* กล่อง history / live match */
+.monitor-box {
+  flex: 1;
+  background: #242424;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.section-title.history {
+  color: #66d9ff;
+}
+
+.section-title.live {
+  color: #ffcc66;
+}
+
+.history-scroll {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+/* Card แมตช์ที่กำลังเล่น */
+.live-card {
+  background: #333;
+  border-left: 6px solid #ff4d4d;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.live-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.live-player {
+  font-size: 18px;
+}
+
+.live-player span {
+  margin: 0 2px;
+}
+
+/* timer */
+.timer-box {
+  margin-top: 10px;
+  font-size: 16px;
+  background: #500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  color: #ffcccc;
+  font-weight: bold;
+}
+.queue-card {
+  background: #2b2b2b;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border-left: 5px solid #3498db;
+}
+
+.queue-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #4db8ff;
+}
+
+.queue-player {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.queue .vs {
+  color: #ccc;
+  margin: 6px 0;
+}
+.timer-tv {
+  background: #b30000;
+  color: white;
+
+  padding: 4px 12px;
+  border-radius: 6px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  box-shadow: 0 0 10px #ff000077;
+}
+.live-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #222;
+  color: #00eaff;
+  border: 1px solid #00eaff55;
+
+  padding: 4px 10px;
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  box-shadow: 0 0 8px #00eaff55;
+}

@@ -1,0 +1,4 @@
+/* random.css — RandomPanel wrapper styling (kept minimal) */
+.random-panel-root { display:flex; flex-direction:column; gap:10px; }
+.random-controls { display:flex; flex-direction:column; gap:8px; }
+.btn-random { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color:#001919; padding:12px; border-radius:8px; font-weight:800; border:none; cursor:pointer; }

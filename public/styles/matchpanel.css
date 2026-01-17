@@ -1,0 +1,149 @@
+/* MatchPanel — C3 Smoky Gray + Cyan Accent */
+
+.mp-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.05));
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.05);
+  margin-top: 10px;
+}
+
+.mp-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+/* TEAM AREA */
+.mp-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.mp-team-box {
+  flex: 1;
+  background: rgba(255,255,255,0.03);
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.mp-team-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.mp-select .react-select__control {
+  background: rgba(0,0,0,0.4) !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255,255,255,0.07) !important;
+  margin-bottom: 8px;
+}
+
+/* VS */
+.mp-vs {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+/* BUTTONS */
+.mp-btn {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.mp-btn.cyan {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #00191a;
+}
+
+.mp-btn.green {
+  background: #2ecc71;
+  color: #001f12;
+}
+
+.mp-btn.red {
+  background: #e26b6b;
+  color: white;
+}
+
+/* MATCH LIST */
+.mp-subtitle {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.mp-match-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mp-empty {
+  color: var(--muted);
+  padding: 8px;
+}
+
+.mp-match-item {
+  background: rgba(255,255,255,0.03);
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.mp-match-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.mp-match-title {
+  font-weight: 700;
+}
+
+.mp-status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mp-status.green { background: #2ecc71; color:#001f12; }
+.mp-status.yellow { background: #e6c068; color:#2f1f00; }
+
+/* player layout */
+.mp-players {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.mp-team {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mp-vs2 {
+  font-weight: 800;
+  color: var(--muted);
+}
+
+/* actions */
+.mp-actions {
+  display: flex;
+  gap: 10px;
+}

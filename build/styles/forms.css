@@ -1,0 +1,22 @@
+/* ===========================================================
+   INPUTS & SELECT
+=========================================================== */
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: #1e2a3c;
+  border: 1px solid #2d3e57;
+  color: var(--text-main);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 4px rgba(59,201,219,0.6);
+}

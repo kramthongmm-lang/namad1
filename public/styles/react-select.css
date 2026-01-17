@@ -1,0 +1,7 @@
+/* react-select.css — safe overrides */
+.react-select__control { background: transparent !important; border: 1px solid rgba(255,255,255,0.04) !important; min-height:40px !important; border-radius:8px !important; }
+.react-select__menu { background: linear-gradient(180deg, var(--panel), var(--panel-2)) !important; color:var(--text) !important; z-index:9999 !important; }
+.react-select__option { color:var(--text) !important; }
+.react-select__option--is-focused { background: rgba(255,255,255,0.02) !important; }
+.react-select__single-value { color:var(--text) !important; }
+.inline-select .react-select__control { min-width: 160px; }

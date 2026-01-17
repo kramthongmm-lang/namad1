@@ -1,0 +1,8 @@
+/* preview.css — multi preview small rows */
+.multi-preview-row { display:flex; justify-content:space-between; align-items:center; padding:10px; border-radius:8px; background: rgba(255,255,255,0.01); margin-bottom:8px; }
+.mp-info { display:flex; flex-direction:column; }
+.mp-actions { display:flex; gap:8px; }
+.preview-actions { display:flex; gap:8px; justify-content:flex-end; }
+.btn-sm { padding:6px 8px; border-radius:6px; font-size:13px; }
+.btn-green { background:var(--success); color:#001919; font-weight:700; padding:10px 12px; border-radius:8px; }
+.btn-red { background:var(--danger); color:#fff; font-weight:700; padding:10px 12px; border-radius:8px; }

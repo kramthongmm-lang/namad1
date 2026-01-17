@@ -1,0 +1,54 @@
+/* layout.css — S3 minimal sidebar layout */
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Sidebar fixed narrow */
+.sidebar {
+  width: 220px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border-right: 1px solid rgba(255,255,255,0.02);
+}
+
+/* Main content fills rest */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* page header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* grid for content area */
+.content-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* left column (status) and right column (panels) */
+.col-left { }
+.col-right { }
+
+/* responsive */
+@media (max-width: 980px) {
+  .app-shell { flex-direction: column; }
+  .sidebar { width: 100%; flex-direction: row; overflow-x:auto; padding:12px; gap:8px; }
+  .content-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,40 @@
+/* base.css — theme variables + base resets (C3: Smoky Gray + Cyan) */
+:root{
+  --bg:#0b1014;
+  --panel:#0f1720;
+  --panel-2:#121821;
+  --muted:#9fb0c3;
+  --text:#e7f6fb;
+  --accent:#2ec7d6; /* cyan */
+  --accent-2:#1aa6b0;
+  --danger:#e26b6b;
+  --success:#2ecc71;
+  --radius:10px;
+  --shadow:0 8px 28px rgba(2,6,10,0.6);
+  --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg, #071014 0%, #0b1014 100%);
+  color:var(--text);
+  font-family: "Prompt", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:14px;
+}
+
+/* basic card */
+.card {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.small { padding:10px; }
+.muted { color: var(--muted); font-size:13px; }
+.btn { cursor:pointer; border:none; }

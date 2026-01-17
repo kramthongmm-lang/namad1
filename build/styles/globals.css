@@ -1,0 +1,46 @@
+/* ===========================================================
+   GLOBAL THEME
+=========================================================== */
+
+:root {
+  --bg-main: #0f1b2b;
+  --bg-card: #152235;
+  --bg-hover: #1d2e45;
+  --primary: #3bc9db;
+  --primary-dark: #249ab3;
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --yellow: #f1c40f;
+  --text-main: #e6f1ff;
+  --text-light: #b8c6d9;
+  --radius: 12px;
+  --shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+/* Base */
+body {
+  margin: 0;
+  background: var(--bg-main);
+  font-family: 'Prompt', sans-serif;
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* Layout wrapper */
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
